@@ -124,8 +124,8 @@ pterodactyl() {
     output "Install Pterodactyl-Panel."
     # Installing the Panel
     cd /var/www/pterodactyl/html
-    curl -Lo v0.5.7.tar.gz https://github.com/Pterodactyl/Panel/archive/v0.5.7.tar.gz
-    tar --strip-components=1 -xzvf v0.5.7.tar.gz
+    curl -Lo v0.6.4.tar.gz https://github.com/Pterodactyl/Panel/archive/v0.6.4.tar.gz
+    tar --strip-components=1 -xzvf v0.6.4.tar.gz
     sudo chmod -R 777 storage/* bootstrap/cache
     curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
     composer setup
